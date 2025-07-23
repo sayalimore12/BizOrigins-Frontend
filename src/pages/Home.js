@@ -43,6 +43,7 @@ const Home = () => {
 
   return (
     <div>
+      {/* Skip Link (visible only on focus) */}
       <a href="#main-content" class="skip-link">Skip to main content</a>
       {home.length === 0 && <p className="text-center mt-10">No content found.</p>}
 

@@ -40,7 +40,11 @@ const Pricing = () => {
 ];
 
   return (
-    <div className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
+    <>
+      {/* Skip Link (visible only on focus) */}
+      <a href="#main-content" class="skip-link">Skip to main content</a>
+
+       <div className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
       {/* Section Heading */}
       <div className="text-center max-w-2xl mx-auto mb-12">
         <h1 className="text-3xl sm:text-5xl font-bold mb-4">Choose your Plan</h1>
@@ -51,7 +55,7 @@ const Pricing = () => {
 
       {/* Pricing Cards */}
 
-       <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
+       <div id="main-content" className="mt-12 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 max-w-6xl mx-auto">
           {plans.map((plan) => (
             <div
               key={plan.name}
@@ -147,6 +151,8 @@ const Pricing = () => {
         </div>
       </div>
     </div>
+    </>
+   
   );
 };
 

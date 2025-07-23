@@ -77,6 +77,8 @@ const AboutUs = () => {
 
   return (
     <div className="bg-gray-50">
+      {/* Skip Link (visible only on focus) */}
+      <a href="#main-content" class="skip-link">Skip to main content</a>
       {/* Hero Section */}
       <section className="relative bg-black text-white py-16 px-4 sm:px-6 lg:px-8 text-center">
         <div className="max-w-4xl mx-auto">
@@ -130,7 +132,7 @@ const AboutUs = () => {
       </section>
 
       {/* What Makes Us Different */}
-      <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#fb8500] to-black text-white">
+      <section  id="main-content" className="py-20 px-4 sm:px-6 lg:px-8 bg-gradient-to-b from-[#fb8500] to-black text-white">
         <div className="max-w-7xl mx-auto text-center">
           <h2 className="text-2xl sm:text-3xl lg:text-4xl font-bold mb-12">
             What Makes Us Different

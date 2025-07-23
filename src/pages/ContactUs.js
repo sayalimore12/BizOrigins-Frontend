@@ -4,6 +4,10 @@ import { useNavigate } from "react-router-dom";
 
 const ContactUs = () => {
   const navigate = useNavigate(); // navigation
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+  }
   return (
     <>
       <section className="py-16 px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
@@ -70,6 +74,7 @@ const ContactUs = () => {
 
               {/* Submit Button */}
               <button
+                onClick={handleSubmit}
                 type="submit"
                 className="mt-4 w-full py-2 px-8 rounded-md font-semibold transition-all duration-300 shadow-md bg-[#fb8500] text-black
                 hover:bg-black hover:text-[#fb8500] hover:shadow-[0_0_15px_#fb8500]"

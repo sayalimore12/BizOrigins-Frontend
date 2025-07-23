@@ -108,6 +108,8 @@ const Resources = () => {
 
  return (
     <section>
+      {/* Skip Link (visible only on focus) */}
+      <a href="#main-content" class="skip-link">Skip to main content</a>
       <div className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
         {/* Title */}
         <div className="text-center max-w-3xl mx-auto px-4">
@@ -118,7 +120,7 @@ const Resources = () => {
         </div>
 
         {/* Sidebar + Content */}
-        <div className="flex flex-col md:flex-row max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        <div id="main-content" className="flex flex-col md:flex-row max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Sidebar */}
           <aside
             className="md:w-1/4 w-full mb-10 md:mb-0 md:mr-10

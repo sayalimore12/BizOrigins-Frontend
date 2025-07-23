@@ -43,6 +43,9 @@ const services = [
 const OurServices = () => {
   const navigate = useNavigate(); // navigation
   return (
+    <>
+    {/* Skip Link (visible only on focus) */}
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
       <div className="max-w-7xl mx-auto text-center">
         <h1 className="text-3xl sm:text-5xl font-bold mb-4">
@@ -51,7 +54,7 @@ const OurServices = () => {
         <p className="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
           Comprehensive business formation and compliance services to help you start, grow, and manage your business.
         </p>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
+        <div id="main-content" className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 text-left">
           {services.map((service, index) => (
             <div
               key={index}
@@ -78,6 +81,8 @@ const OurServices = () => {
         </div>
       </div>
     </section>
+    </>
+    
   );
 };
 
