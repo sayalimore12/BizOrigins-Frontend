@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
 import bannerFallback from "../assets/images/banner.jpg";
+import bannerFallback from "../assets/images/banner_image.jpg";
 import TestimonialSlider from "../components/TestimonialSlider";
 import { FaCheckCircle } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
