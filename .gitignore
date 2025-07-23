@@ -1,0 +1,97 @@
+# See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
+
+# === Dependency directories ===
+node_modules/
+
+# === Build output ===
+build/
+dist/
+
+# === System files ===
+.DS_Store
+Thumbs.db
+
+# === Logs ===
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# === Environment variables ===
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# === Editor folders ===
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+
+# === Test coverage ===
+coverage/
+
+# === Lint/Cache ===
+.eslintcache
+.cache/
+.parcel-cache/
+.next/
+out/
+
+# === TypeScript build ===
+*.tsbuildinfo
+
+# === Optional npm/yarn/pnpm cache ===
+.yarn/cache/
+.pnpm-store/
+
+# === Mac-specific ===
+*.DS_Store
+
+# === Windows-specific ===
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# === Optional lock files (use one package manager) ===
+# If using npm, ignore yarn.lock
+# yarn.lock
+# If using yarn, ignore package-lock.json
+# package-lock.json
+
+# === React Native specific (if using React Native) ===
+# ios/
+# android/
+
+# === Storybook static build ===
+storybook-static/
+
+# === Vite specific ===
+.vite/
+
+# === Others ===
+*.log
+/node_modules
+/.pnp
+.pnp.js
+
+# testing
+/coverage
+
+# production
+/build
+
+# misc
+.DS_Store
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
