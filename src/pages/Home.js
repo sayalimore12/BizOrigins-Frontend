@@ -12,9 +12,9 @@ const api = axios.create ({
   baseURL: process.env.REACT_APP_API_URL,
 })
 
-const API = api+"/api/homes?populate=*";
+const API = "/api/homes?populate=*";
 const BASE_URL = api;
-
+console.log(API);
 const Home = () => {
   const [home, setHome] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -24,7 +24,7 @@ const Home = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get(API);
+        const res = await api.get(API);
         setHome(res.data.data || []);
       } catch (err) {
         console.error("API Error:", err);

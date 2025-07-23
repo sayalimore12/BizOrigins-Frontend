@@ -21,7 +21,7 @@ const api = axios.create ({
   baseURL: process.env.REACT_APP_API_URL,
 })
 
-const API = api+"/api/about-us?populate=*";
+const API = "/api/about-us?populate=*";
 const BASE_URL = api;
 
 const iconmap = {
@@ -46,7 +46,7 @@ const AboutUs = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get(API);
+        const res = await api.get(API);
         //  console.log("Strapi response:", res.data);
         setAbout(res.data.data || []);
       } catch (err) {
