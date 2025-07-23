@@ -43,7 +43,7 @@ const Pricing = () => {
     <div className="py-16 px-4 sm:px-6 lg:px-8 bg-gray-50">
       {/* Section Heading */}
       <div className="text-center max-w-2xl mx-auto mb-12">
-        <h2 className="text-4xl font-bold text-gray-900 mb-4">Choose your Plan</h2>
+        <h1 className="text-3xl sm:text-5xl font-bold mb-4">Choose your Plan</h1>
         <p className="mt-4 text-gray-600">
           Whether you are starting out or scaling up, there is a plan designed for you.
         </p>

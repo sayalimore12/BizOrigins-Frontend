@@ -45,9 +45,9 @@ const OurServices = () => {
   return (
     <section className="py-20 px-4 sm:px-6 lg:px-8 bg-gray-50">
       <div className="max-w-7xl mx-auto text-center">
-        <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-8">
+        <h1 className="text-3xl sm:text-5xl font-bold mb-4">
           Our Services
-        </h2>
+        </h1>
         <p className="text-lg text-gray-600 mb-12 max-w-2xl mx-auto">
           Comprehensive business formation and compliance services to help you start, grow, and manage your business.
         </p>

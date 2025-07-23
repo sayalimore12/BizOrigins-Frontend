@@ -2,8 +2,10 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { FaFacebookF, FaTwitter, FaInstagram, FaLinkedinIn } from "react-icons/fa";
 import blackLogo from '../assets/images/logo-black-bg.png';
+import { useNavigate } from "react-router-dom";
 
 const Footer = () => {
+   const navigate = useNavigate(); // navigation
   return (
     <footer className="bg-black text-gray-300">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 grid grid-cols-1 md:grid-cols-4 gap-8">
@@ -12,10 +14,11 @@ const Footer = () => {
         <div>
           <h2 className="text-2xl font-bold text-white mb-4">
             <img
-  src={blackLogo}
-  alt="BizOrigins Logo"
-  className="h-12 w-auto object-contain transition-transform duration-500"
-/>
+              src={blackLogo}
+              onClick={() => navigate("/home")}
+              alt="BizOrigins Logo"
+              className="h-12 w-auto object-contain transition-transform duration-500"
+            />
           </h2>
           <p className="text-gray-400 text-sm">
             Simplifying Business Formation <br/>

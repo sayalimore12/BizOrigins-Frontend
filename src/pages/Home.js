@@ -15,7 +15,7 @@ const api = axios.create ({
 
 const API = "/api/homes?populate=*";
 const BASE_URL = api;
-console.log(API);
+
 const Home = () => {
   const [home, setHome] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -43,6 +43,7 @@ const Home = () => {
 
   return (
     <div>
+      <a href="#main-content" class="skip-link">Skip to main content</a>
       {home.length === 0 && <p className="text-center mt-10">No content found.</p>}
 
       {home.map((item) => {
@@ -117,7 +118,7 @@ const Home = () => {
             </div>
 
             {/* Why Choose Us Section */}
-            <section className="bg-white py-16 px-4 sm:px-6 lg:px-8">
+            <section id="main-content" className="bg-white py-16 px-4 sm:px-6 lg:px-8">
               <div className="max-w-7xl mx-auto text-center">
                 {/* Heading */}
                 <h2 className="text-3xl sm:text-4xl font-bold text-gray-900 mb-4">
