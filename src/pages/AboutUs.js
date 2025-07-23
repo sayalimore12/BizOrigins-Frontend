@@ -17,8 +17,12 @@ import visionImg from "../assets/images/vision.jpg";
 import axios from "axios";
 import { useNavigate } from "react-router-dom";
 
-const API = "http://localhost:1337/api/about-us?populate=*";
-const BASE_URL = "http://localhost:1337";
+const api = axios.create ({
+  baseURL: process.env.REACT_APP_API_URL,
+})
+
+const API = api+"/api/about-us?populate=*";
+const BASE_URL = api;
 
 const iconmap = {
   FaCheckCircle,

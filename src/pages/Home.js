@@ -5,8 +5,15 @@ import TestimonialSlider from "../components/TestimonialSlider";
 import { FaCheckCircle } from "react-icons/fa";
 import { useNavigate } from "react-router-dom";
 
-const API = "http://localhost:1337/api/homes?populate=*";
-const BASE_URL = "http://localhost:1337";
+// const API = "http://localhost:1337/api/homes?populate=*";
+// const BASE_URL = "http://localhost:1337";
+
+const api = axios.create ({
+  baseURL: process.env.REACT_APP_API_URL,
+})
+
+const API = api+"/api/homes?populate=*";
+const BASE_URL = api;
 
 const Home = () => {
   const [home, setHome] = useState([]);
