@@ -15,7 +15,7 @@ const Footer = () => {
           <h2 className="text-2xl font-bold text-white mb-4">
             <img
               src={blackLogo}
-              onClick={() => navigate("/home")}
+              onClick={() => navigate("/")}
               alt="BizOrigins Logo"
               className="h-12 w-auto object-contain transition-transform duration-500"
             />
