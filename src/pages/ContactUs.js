@@ -86,7 +86,7 @@ const ContactUs = () => {
             <ul className="space-y-4 text-gray-700">
               <li>
                 <strong>Contact Number</strong>
-                 <p className="text-sm">Yes, call our support at +1 (800) 123-4567.</p>
+                 <p className="text-sm">Call us at +1 (800) 734-6721</p>
               </li>
               <li>
                 <strong>Our email</strong>

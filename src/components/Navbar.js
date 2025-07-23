@@ -13,6 +13,7 @@ const Navbar = () => {
    const handleNavClick = (path) => {
     navigate(path);
     window.scrollTo({ top: 0, behavior: 'smooth' });
+    setIsOpen(false); // Close the menu
   };
 
   useEffect(() => {
@@ -95,6 +96,7 @@ const Navbar = () => {
             <li><NavLink to="/contact" className={linkClasses} onClick={() => handleNavClick('/contact')}>Contact Us</NavLink></li>
           </ul>
         </div>
+        
       </div>
     </nav>
   );

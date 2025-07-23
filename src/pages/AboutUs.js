@@ -27,6 +27,7 @@ const BASE_URL = api;
 const iconmap = {
   FaCheckCircle,
   FaRocket,
+  FaTasks,
   FaGlobe,
   FaUsers,
   FaClock,
@@ -34,7 +35,7 @@ const iconmap = {
   FaBuilding,
   FaStar,
   FaHandshake,
-  FaTasks 
+
 }
 
 const AboutUs = () => {
@@ -60,7 +61,6 @@ const AboutUs = () => {
     fetchData();
   }, []);
 
-  console.log(">>", about);
   if (!about) return <p>Loading...</p>;
 
   const { hero_title,

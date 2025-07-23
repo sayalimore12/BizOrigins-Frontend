@@ -41,7 +41,7 @@ const Footer = () => {
           <h3 className="text-white text-lg font-semibold mb-4">Contact</h3>
           <p className="text-gray-400 text-sm">51 Windsor Avenue, Mineola, <br/>New York 11501</p>
           <p className="text-gray-400 text-sm">Email: info@bizorigins.com</p>
-          <p className="text-gray-400 text-sm">Phone: +1 (800) 123-4567</p>
+          <p className="text-gray-400 text-sm">Phone: +1 (800) 734-6721</p>
         </div>
 
         {/* Social Media */}
