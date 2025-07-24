@@ -28,14 +28,13 @@ const iconmap = {
   FaCheckCircle,
   FaRocket,
   FaTasks,
-  FaGlobe,
-  FaUsers,
   FaClock,
   FaBook,
+  FaUsers,
   FaBuilding,
   FaStar,
   FaHandshake,
-
+  FaGlobe,
 }
 
 const AboutUs = () => {
